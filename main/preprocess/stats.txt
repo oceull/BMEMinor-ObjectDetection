@@ -1,0 +1,171 @@
+*********************Training**************************
+In training video file train_dataset\tool_video_01.txt:                    
+	The total number of frames with annotation is 2354:
+	The number of class index 0: 1758
+	The number of class index 1: 19
+	The number of class index 2: 1566
+	The number of class index 3: 50
+	The number of class index 4: 51
+	The number of class index 6: 133
+In training video file train_dataset\tool_video_01_pred.txt:                    
+	The total number of frames with annotation is 2354:
+	The number of class index 0: 1873
+	The number of class index 1: 1878
+	The number of class index 2: 1886
+	The number of class index 3: 1901
+	The number of class index 4: 1849
+	The number of class index 5: 1861
+	The number of class index 6: 1910
+In training video file train_dataset\tool_video_01_zeros.txt:                    
+	The total number of frames with annotation is 2354:
+In training video file train_dataset\tool_video_02.txt:                    
+	The total number of frames with annotation is 1973:
+	The number of class index 0: 695
+	The number of class index 1: 38
+	The number of class index 2: 1034
+	The number of class index 3: 25
+	The number of class index 4: 90
+	The number of class index 5: 121
+	The number of class index 6: 131
+In training video file train_dataset\tool_video_02_pred.txt:                    
+	The total number of frames with annotation is 1973:
+	The number of class index 0: 1574
+	The number of class index 1: 1589
+	The number of class index 2: 1552
+	The number of class index 3: 1588
+	The number of class index 4: 1594
+	The number of class index 5: 1579
+	The number of class index 6: 1592
+In training video file train_dataset\tool_video_03.txt:                    
+	The total number of frames with annotation is 4576:
+	The number of class index 0: 1913
+	The number of class index 2: 3374
+	The number of class index 3: 127
+	The number of class index 4: 290
+	The number of class index 6: 230
+In training video file train_dataset\tool_video_04.txt:                    
+	The total number of frames with annotation is 1195:
+	The number of class index 0: 739
+	The number of class index 1: 109
+	The number of class index 2: 665
+	The number of class index 3: 23
+	The number of class index 4: 57
+	The number of class index 6: 89
+In training video file train_dataset\tool_video_05.txt:                    
+	The total number of frames with annotation is 2516:
+	The number of class index 0: 687
+	The number of class index 2: 1810
+	The number of class index 3: 19
+	The number of class index 4: 23
+	The number of class index 6: 241
+In training video file train_dataset\tool_video_06.txt:                    
+	The total number of frames with annotation is 3107:
+	The number of class index 0: 2243
+	The number of class index 1: 226
+	The number of class index 2: 1396
+	The number of class index 3: 18
+	The number of class index 4: 51
+	The number of class index 5: 374
+	The number of class index 6: 195
+In training video file train_dataset\tool_video_07.txt:                    
+	The total number of frames with annotation is 1357:
+	The number of class index 0: 631
+	The number of class index 1: 58
+	The number of class index 2: 743
+	The number of class index 3: 44
+	The number of class index 4: 44
+	The number of class index 5: 75
+	The number of class index 6: 112
+In training video file train_dataset\tool_video_08.txt:                    
+	The total number of frames with annotation is 1635:
+	The number of class index 0: 874
+	The number of class index 1: 185
+	The number of class index 2: 632
+	The number of class index 3: 38
+	The number of class index 4: 54
+	The number of class index 5: 205
+	The number of class index 6: 96
+In training video file train_dataset\tool_video_09.txt:                    
+	The total number of frames with annotation is 1924:
+	The number of class index 0: 570
+	The number of class index 2: 1237
+	The number of class index 3: 14
+	The number of class index 4: 34
+	The number of class index 6: 135
+In training video file train_dataset\tool_video_10.txt:                    
+	The total number of frames with annotation is 2650:
+	The number of class index 0: 857
+	The number of class index 2: 1673
+	The number of class index 3: 53
+	The number of class index 4: 184
+	The number of class index 5: 178
+	The number of class index 6: 142
+The total number of training frames with annotation is 29968.
+
+There are 7 multi-label class in total.
+	The number of class index 0b0: 14414
+	The number of class index 0b1: 4102
+	The number of class index 0b10: 17568
+	The number of class index 0b11: 3900
+	The number of class index 0b100: 4321
+	The number of class index 0b101: 4393
+	The number of class index 0b110: 5006
+
+
+
+*********************Testing***************************
+In testing video file test_dataset\tool_video_11.txt:                    
+	The total number of frames with annotation is 4410:
+	The number of class index 0: 2592
+	The number of class index 1: 51
+	The number of class index 2: 2447
+	The number of class index 3: 44
+	The number of class index 4: 103
+	The number of class index 6: 141
+In testing video file test_dataset\tool_video_12.txt:                    
+	The total number of frames with annotation is 2033:
+	The number of class index 0: 1089
+	The number of class index 1: 32
+	The number of class index 2: 1524
+	The number of class index 3: 20
+	The number of class index 4: 26
+	The number of class index 5: 27
+	The number of class index 6: 71
+In testing video file test_dataset\tool_video_13.txt:                    
+	The total number of frames with annotation is 2399:
+	The number of class index 0: 1300
+	The number of class index 1: 173
+	The number of class index 2: 1213
+	The number of class index 3: 35
+	The number of class index 4: 54
+	The number of class index 5: 12
+	The number of class index 6: 115
+In testing video file test_dataset\tool_video_14.txt:                    
+	The total number of frames with annotation is 1874:
+	The number of class index 0: 844
+	The number of class index 1: 11
+	The number of class index 2: 1096
+	The number of class index 3: 21
+	The number of class index 4: 64
+	The number of class index 5: 72
+	The number of class index 6: 88
+In testing video file test_dataset\tool_video_15.txt:                    
+	The total number of frames with annotation is 1825:
+	The number of class index 0: 746
+	The number of class index 1: 92
+	The number of class index 2: 1174
+	The number of class index 3: 38
+	The number of class index 4: 68
+	The number of class index 5: 48
+	The number of class index 6: 68
+The total number of testing frames with annotation is 12541.
+
+There are 7 multi-label class in total.
+	The number of class index 0b0: 6571
+	The number of class index 0b1: 359
+	The number of class index 0b10: 7454
+	The number of class index 0b11: 158
+	The number of class index 0b100: 315
+	The number of class index 0b101: 159
+	The number of class index 0b110: 483
+

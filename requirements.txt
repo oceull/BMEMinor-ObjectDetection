@@ -1,1 +1,15 @@
-PyYAML==4.2b1
+opencv-python
+dataset
+ffmpeg
+ffprobe
+glob2
+numpy
+pathlib
+pickle-mixin
+pillow
+pretrainedmodels
+sklearn
+sk-video
+smile
+times
+torch
