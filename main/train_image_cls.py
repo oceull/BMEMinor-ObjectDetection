@@ -21,18 +21,18 @@ from models import get_image_model
 from train_utils import evaluate, final_evaluate, train
 from utils import get_gt_from_files
 
-curr_path = "D:/Documents/STGCN-IPMI19"
+curr_path = ""
 
 flags.DEFINE_integer("num_classes", 7, "Number of classes.")
 flags.DEFINE_string("model_name", "densenet121", "Model name to use.")
 flags.DEFINE_boolean("use_pretrained", True, "If used pretrained model.")
-flags.DEFINE_string("train_list", curr_path + "/video_features/train_video.pkl",
+flags.DEFINE_string("train_list", curr_path + "/mnt/data/m2cai/m2cai_tool/images_299/dumped/train*",
     "Train data set list.")
 flags.DEFINE_string(
-    "valid_list", curr_path  +"/video_features/valid_video.pkl",
+    "valid_list", curr_path  +"/mnt/data/m2cai/m2cai_tool/images_299/dumped/valid*",
     "Valid data set list.")
 flags.DEFINE_string(
-    "test_list", curr_path + "/video_features/test_video.pkl",
+    "test_list", curr_path + "/mnt/data/m2cai/m2cai_tool/images_299/dumped/test*",
     "Test data set list.")
 flags.DEFINE_integer("num_gpu", 1, "Number of gpus to use.")
 flags.DEFINE_integer("batch_size", 64, "Batch size.")
