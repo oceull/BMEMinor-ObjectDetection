@@ -17,7 +17,7 @@ from smile import app
 from smile import flags
 from smile import logging
 
-curr_path = "D:/Documents/STGCN-IPMI19"
+curr_path = ""
 
 flags.DEFINE_string("data_path",
                     curr_path + "/mnt/data/m2cai/m2cai_tool/test_dataset",

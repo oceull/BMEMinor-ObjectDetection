@@ -18,7 +18,7 @@ from torch.utils.data import DataLoader
 from dataset import get_single_video_loader
 from models import get_image_model
 
-curr_path = "D:/Documents/STGCN-IPMI19"
+curr_path = ""
 
 flags.DEFINE_integer("num_classes", 7, "Number of classes.")
 flags.DEFINE_string("model_name", "densenet121", "Model name to use.")
