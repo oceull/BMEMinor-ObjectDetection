@@ -11,7 +11,7 @@ import sys
 import numpy as np
 from smile import app, flags, logging
 
-curr_path = "D:/Documents/STGCN-IPMI19"
+curr_path = ""
 
 flags.DEFINE_string("dense_feature_path",
                     curr_path + "/mnt/data/m2cai/m2cai_tool/dense_features/test",

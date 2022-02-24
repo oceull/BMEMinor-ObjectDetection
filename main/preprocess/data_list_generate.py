@@ -20,7 +20,7 @@ from smile import app
 from smile import flags
 from smile import logging
 
-curr_path = "D:/Documents/STGCN-IPMI19"
+curr_path = ""
 
 flags.DEFINE_string("train_image_path",
                     curr_path + "/mnt/data/m2cai/m2cai_tool/images/train/train_dataset/",
@@ -37,10 +37,10 @@ flags.DEFINE_boolean("dump", True, "If to dump using pickle.")
 flags.DEFINE_string("dump_target",
                     curr_path + "/mnt/data/m2cai/m2cai_tool/images_299/dumped/",
                     "Target path for dumping.")
-flags.DEFINE_integer("max_num_to_dump", 50000, "Max number to dump in a file.")
+flags.DEFINE_integer("max_num_to_dump", 5000, "Max number to dump in a file.")
 FLAGS = flags.FLAGS
 
-def dump_image_list(image_list, target_path, max_num_to_dump=20000,
+def dump_image_list(image_list, target_path, max_num_to_dump=5000,
                     dataset_label="train"):
     logging.info("Processing %s set with %d images." \
                     % (dataset_label, len(image_list)))
@@ -49,12 +49,15 @@ def dump_image_list(image_list, target_path, max_num_to_dump=20000,
     for i in range(len(image_list)):
         if i % 1000 == 0:
             logging.info("Processed %d images." % i)
+            # breakpoint()
         if i > 0 and i % max_num_to_dump == 0:
             logging.info("Dumping the %d file." % idx)
             pickle.dump(data_pairs,
                         open(os.path.join(target_path,
                                           "%s_%02d.pkl" % (dataset_label, idx)), 
                         "wb"))
+            for img,l in data_pairs:
+                img.close()
             data_pairs = []
             idx += 1
         image_path = image_list[i].split("\t")[0]
@@ -64,18 +67,18 @@ def dump_image_list(image_list, target_path, max_num_to_dump=20000,
         label = np.fromstring(" ".join(list(label_str)),
                                   dtype=int, sep=" ")
         data_pairs += [(image, label)]
+
+    # breakpoint()
     if len(data_pairs) > 0:
-        pickle.dump(data_pairs,
-                    open(os.path.join(target_path,
-                                      "%s_%02d.pkl" % (dataset_label, idx)), 
-                        "wb"))
+        pickle.dump(data_pairs, open(os.path.join(target_path, "%s_%02d.pkl" % (dataset_label, idx)), "ab+"))
+    # image.close()
 
 def main(_):
-    win32file._setmaxstdio(20384)
+    
+    # win32file._setmaxstdio(20384)
     train_list = []
     valid_list = []
     test_list = []
-
     undivided_train_images = glob.glob(os.path.join(FLAGS.train_image_path,
                                                     '*/*.jpg'))
     test_images = glob.glob(os.path.join(FLAGS.test_image_path, '*/*.jpg'))

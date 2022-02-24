@@ -20,7 +20,7 @@ from models import get_video_model
 from train_utils import evaluate, final_evaluate, train
 from utils import get_gt_from_files
 
-curr_path = "D:/Documents/STGCN-IPMI19"
+curr_path = ""
 
 flags.DEFINE_integer("num_classes", 7, "Number of classes.")
 flags.DEFINE_string(
